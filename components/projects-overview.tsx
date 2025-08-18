@@ -30,7 +30,7 @@ const featuredProjects = [
 
 export function ProjectsOverview() {
   return (
-    <section id="projects" className="relative py-20 overflow-hidden">
+    <section id="projects" className="relative py-10 overflow-hidden">
       {/* Background Pattern */}
       <GridPattern
         className="absolute inset-0 opacity-5"

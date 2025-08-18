@@ -15,9 +15,6 @@ import {
   SiDocker,
   SiFigma,
   SiVercel,
-  SiFirebase,
-  SiStripe,
-  SiPrisma
 } from "react-icons/si";
 
 const technologies = [
@@ -33,14 +30,11 @@ const technologies = [
   { name: "Docker", icon: SiDocker, color: "text-blue-500" },
   { name: "Figma", icon: SiFigma, color: "text-purple-500" },
   { name: "Vercel", icon: SiVercel, color: "text-black dark:text-white" },
-  { name: "Firebase", icon: SiFirebase, color: "text-orange-500" },
-  { name: "Stripe", icon: SiStripe, color: "text-purple-600" },
-  { name: "Prisma", icon: SiPrisma, color: "text-blue-500" },
 ];
 
 export function SkillsOverview() {
   return (
-    <section id="skills" className="relative py-20 overflow-hidden">
+    <section id="skills" className="relative py-10 overflow-hidden">
       <div className="relative z-10 px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div

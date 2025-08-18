@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Logo from "./logo";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -30,15 +31,10 @@ export function Navigation() {
       <div className="w-2/3 mx-auto">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="text-xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent cursor-pointer"
-            >
-              Portfolio
-            </motion.div>
-          </Link>
-
+          <Logo
+            width={70}
+            height={50}
+          />
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (

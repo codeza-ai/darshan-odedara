@@ -1,0 +1,14 @@
+<svg width="700" height="500" viewBox="0 0 700 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M50 100C50 72.3858 72.3858 50 100 50H240V150H50V100Z" fill="black"/>
+<path d="M50 160H150V300H100C72.3858 300 50 277.614 50 250V160Z" fill="black"/>
+<path d="M50 350H250V450H100C72.3858 450 50 427.614 50 400V350Z" fill="black"/>
+<path d="M250 50C360.457 50 450 139.543 450 250C450 360.457 360.457 450 250 450V350C305.228 350 350 305.228 350 250C350 194.772 305.228 150 250 150V50Z" fill="black"/>
+<circle cx="450" cy="250" r="150" stroke="url(#paint0_linear_1_3)" stroke-width="100"/>
+<path d="M450 250C450 360.457 360.457 450 250 450V350C305.228 350 350 305.228 350 250H450Z" fill="black"/>
+<defs>
+<linearGradient id="paint0_linear_1_3" x1="450" y1="50" x2="450" y2="450" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1500FF"/>
+<stop offset="1" stop-color="#404040"/>
+</linearGradient>
+</defs>
+</svg>
