@@ -4,7 +4,6 @@ import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Mail } from "lucide-react";
 import { DotPattern } from "@/components/magicui/dot-pattern";
-import Link from "next/link";
 import { Socials } from "./socials";
 import Profile from "./profile";
 
@@ -37,7 +36,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-lg text-muted-foreground font-medium"
+            className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground font-medium"
           >
             Hello, I'm
           </motion.p>
