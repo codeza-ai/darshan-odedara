@@ -30,7 +30,7 @@ const featuredPosts = [
 
 export function BlogOverview() {
   return (
-    <section id="blog" className="relative py-20 overflow-hidden">
+    <section id="blog" className="relative py-10 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0">
         <FlickeringGrid

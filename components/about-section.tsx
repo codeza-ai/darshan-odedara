@@ -4,8 +4,10 @@ import { motion } from "motion/react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Mail, MapPin, Calendar, Download, Github, Linkedin, Twitter } from "lucide-react";
+import { MapPin, Calendar, Download, Github, Linkedin} from "lucide-react";
 import { Ripple } from "@/components/magicui/ripple";
+import Image from "next/image";
+import Link from "next/link";
 
 const experiences = [
   {
@@ -88,20 +90,19 @@ export function AboutSection() {
           <div className="lg:col-span-1">
             <Card className="border-border/50 bg-background/50 backdrop-blur-sm">
               <CardHeader className="text-center">
-                <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center">
-                  <span className="text-3xl font-bold text-primary-foreground">YN</span>
-                </div>
+                <Image
+                src={"/profile.png"}
+                alt="Profile Picture"
+                width={200}
+                height={200}
+                className="mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center"/>
                 <CardTitle className="text-2xl">Your Name</CardTitle>
                 <p className="text-muted-foreground">Full Stack Developer</p>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-3 text-sm">
-                  <Mail className="h-4 w-4 text-muted-foreground" />
-                  <span>hello@example.com</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm">
                   <MapPin className="h-4 w-4 text-muted-foreground" />
-                  <span>San Francisco, CA</span>
+                  <span>Bharuch, Gujarat</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm">
                   <Calendar className="h-4 w-4 text-muted-foreground" />
@@ -110,14 +111,16 @@ export function AboutSection() {
                 
                 <div className="flex gap-3 pt-4">
                   <Button size="sm" className="flex-1">
-                    <Download className="mr-2 h-4 w-4" />
-                    Resume
+                    <Link href="/resume.pdf" target="_blank" className="flex items-center">
+                      <Download className="mr-2 h-4 w-4" />
+                      Resume
+                    </Link>
                   </Button>
                 </div>
                 
                 <div className="flex justify-center gap-4 pt-4">
                   <motion.a
-                    href="https://github.com"
+                    href="https://github.com/codeza-ai"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1, y: -2 }}
@@ -127,7 +130,7 @@ export function AboutSection() {
                     <Github className="h-5 w-5" />
                   </motion.a>
                   <motion.a
-                    href="https://linkedin.com"
+                    href="https://linkedin.com/in/darshan-odedara"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1, y: -2 }}
@@ -135,16 +138,6 @@ export function AboutSection() {
                     className="p-2 rounded-full bg-muted/50 hover:bg-muted transition-colors duration-200"
                   >
                     <Linkedin className="h-5 w-5" />
-                  </motion.a>
-                  <motion.a
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.1, y: -2 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="p-2 rounded-full bg-muted/50 hover:bg-muted transition-colors duration-200"
-                  >
-                    <Twitter className="h-5 w-5" />
                   </motion.a>
                 </div>
               </CardContent>

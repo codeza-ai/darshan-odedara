@@ -2,9 +2,10 @@
 
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Twitter, Mail, ArrowUp } from "lucide-react";
+import { Mail, ArrowUp } from "lucide-react";
+import { Socials } from "@/components/socials";
 import Link from "next/link";
-
+import Logo from "./logo";
 export function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -22,43 +23,17 @@ export function Footer() {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              Portfolio
-            </h3>
+            <Logo
+              width={140}
+              height={100}
+            />
+            <br />
             <p className="text-muted-foreground text-sm leading-relaxed">
               Creating exceptional digital experiences through innovative web development and thoughtful design.
             </p>
+            <br />
             <div className="flex space-x-4">
-              <motion.a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="p-2 rounded-full bg-muted/50 hover:bg-muted transition-colors duration-200"
-              >
-                <Github className="h-5 w-5" />
-              </motion.a>
-              <motion.a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="p-2 rounded-full bg-muted/50 hover:bg-muted transition-colors duration-200"
-              >
-                <Linkedin className="h-5 w-5" />
-              </motion.a>
-              <motion.a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="p-2 rounded-full bg-muted/50 hover:bg-muted transition-colors duration-200"
-              >
-                <Twitter className="h-5 w-5" />
-              </motion.a>
+              <Socials/>
             </div>
           </motion.div>
 
@@ -126,11 +101,11 @@ export function Footer() {
             <h4 className="font-semibold text-lg">Get In Touch</h4>
             <div className="space-y-2 text-sm">
               <p className="text-muted-foreground">
-                Ready to start a project or just want to chat?
+                Ready to start a project ?
               </p>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>hello@example.com</span>
+                <span>darshanodedara.official@gmail.com</span>
               </div>
             </div>
             <Button
@@ -139,7 +114,7 @@ export function Footer() {
               className="group"
               asChild
             >
-              <a href="mailto:hello@example.com">
+              <a href="mailto:darshanodedara.official@gmail.com">
                 <Mail className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
                 Send Message
               </a>
