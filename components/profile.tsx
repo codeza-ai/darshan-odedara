@@ -33,7 +33,7 @@ export default function Profile() {
                 alt="Profile Picture"
                 width={300}
                 height={300}
-                className="rounded-full border-none absolute top-[100px] right-[100px]"
+                className="rounded-full bg-white border-none absolute top-[100px] right-[100px]"
             />
         </div>
     );   
