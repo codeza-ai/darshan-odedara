@@ -21,15 +21,15 @@ export function ThemeToggle() {
   }, []);
 
   const getIcon = () => {
-    if (!mounted) return <Monitor className="h-4 w-4" />;
+    if (!mounted) return <Monitor className="h-7 w-7 md:h-5 md:w-5" />;
     
     switch (theme) {
       case "light":
-        return <Sun className="h-4 w-4" />;
+        return <Sun className="h-7 w-7 md:h-5 md:w-5" />;
       case "dark":
-        return <Moon className="h-4 w-4" />;
+        return <Moon className="h-7 w-7 md:h-5 md:w-5" />;
       default:
-        return <Monitor className="h-4 w-4" />;
+        return <Monitor className="h-7 w-7 md:h-5 md:w-5" />;
     }
   };
 
@@ -38,10 +38,10 @@ export function ThemeToggle() {
       <Button
         variant="ghost"
         size="icon"
-        className="relative h-9 w-9 rounded-md border border-border/50 bg-background/50 backdrop-blur-sm"
+        className="relative h-10 w-10 md:h-9 md:w-9 rounded-md border border-border/50 bg-background/50 backdrop-blur-sm"
         disabled
       >
-        <Monitor className="h-4 w-4" />
+        <Monitor className="h-5 w-5 md:h-4 md:w-4" />
         <span className="sr-only">Toggle theme</span>
       </Button>
     );
@@ -57,7 +57,7 @@ export function ThemeToggle() {
           <Button
             variant="ghost"
             size="icon"
-            className="relative h-9 w-9 rounded-md border border-border/50 bg-background/50 backdrop-blur-sm hover:bg-background/80"
+            className="relative h-10 w-10 md:h-9 md:w-9 rounded-md border border-border/50 bg-background/50 backdrop-blur-sm hover:bg-background/80"
           >
             {getIcon()}
             <span className="sr-only">Toggle theme</span>
@@ -69,21 +69,21 @@ export function ThemeToggle() {
           onClick={() => setTheme("light")}
           className="cursor-pointer"
         >
-          <Sun className="mr-2 h-4 w-4" />
+          <Sun className="mr-2 h-6 w-6" />
           <span>Light</span>
         </DropdownMenuItem>
         <DropdownMenuItem
           onClick={() => setTheme("dark")}
           className="cursor-pointer"
         >
-          <Moon className="mr-2 h-4 w-4" />
+          <Moon className="mr-2 h-6 w-6" />
           <span>Dark</span>
         </DropdownMenuItem>
         <DropdownMenuItem
           onClick={() => setTheme("system")}
           className="cursor-pointer"
         >
-          <Monitor className="mr-2 h-4 w-4" />
+          <Monitor className="mr-2 h-6 w-6" />
           <span>System</span>
         </DropdownMenuItem>
       </DropdownMenuContent>

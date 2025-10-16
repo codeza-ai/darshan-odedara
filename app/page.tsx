@@ -10,13 +10,13 @@ export default function Home() {
     <main className="min-h-screen">
       <Navigation />
       <HeroSection />
-      <div className="w-2/3 mx-auto">
+      <div className="w-full lg:w-2/3 mx-auto">
         <ProjectsOverview />
       </div>
-      <div className="w-2/3 mx-auto">
+      <div className="w-full lg:w-2/3 mx-auto">
         <SkillsOverview />
       </div>
-      <div className="w-2/3 mx-auto">
+      <div className="w-full lg:w-2/3 mx-auto">
         <BlogOverview />
       </div>
       <Footer />
