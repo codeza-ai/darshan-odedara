@@ -7,7 +7,7 @@ export default function ProjectsPage() {
     <main className="min-h-screen">
       <Navigation />
       <div className="pt-16">
-        <div className="w-2/3 mx-auto">
+        <div className="w-full md:w-2/3 mx-auto">
           <ProjectsSection />
         </div>
       </div>

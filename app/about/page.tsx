@@ -7,7 +7,7 @@ export default function AboutPage() {
     <main className="min-h-screen">
       <Navigation />
       <div className="pt-16">
-        <div className="w-2/3 mx-auto">
+        <div className="w-full m:w-2/3 mx-auto">
           <AboutSection />
         </div>
       </div>

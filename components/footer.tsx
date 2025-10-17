@@ -28,9 +28,12 @@ export function Footer() {
               height={100}
             />
             <br />
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Creating exceptional digital experiences through innovative web development and thoughtful design.
+            <p className="text-white-foreground text-md leading-relaxed font-bold">
+              Creating exceptional arts in binary.
             </p>
+            <div className="text-white-foreground text-md leading-relaxed font-bold">
+              <p>/'''''\ _ _ _ /'''''\ _ _ _ </p>
+            </div>
             <div className="flex space-x-4">
               <Socials/>
             </div>
@@ -100,9 +103,9 @@ export function Footer() {
             <h4 className="font-semibold text-lg">Get In Touch</h4>
             <div className="space-y-2 text-sm">
               <p className="text-muted-foreground">
-                Ready to start a project ?
+                Want to cook something together? Drop me a line!
               </p>
-              <div className="flex items-center gap-2 text-muted-foreground">
+              <div className="flex items-center gap-2 font-bold text-white-foreground">
                 <Mail className="h-4 w-4" />
                 <span>darshanodedara.official@gmail.com</span>
               </div>
