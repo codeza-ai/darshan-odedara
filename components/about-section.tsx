@@ -9,48 +9,44 @@ import { Ripple } from "@/components/magicui/ripple";
 import Image from "next/image";
 import Link from "next/link";
 
-const experiences = [
-  {
-    title: "Senior Full Stack Developer",
-    company: "Tech Solutions Inc.",
-    period: "2022 - Present",
-    description: "Leading development of enterprise web applications using React, Node.js, and cloud technologies.",
-    technologies: ["React", "Node.js", "AWS", "PostgreSQL"],
-  },
-  {
-    title: "Frontend Developer",
-    company: "Digital Agency XYZ",
-    period: "2020 - 2022",
-    description: "Built responsive websites and web applications for various clients using modern frontend technologies.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Next.js"],
-  },
-  {
-    title: "Junior Developer",
-    company: "Startup ABC",
-    period: "2019 - 2020",
-    description: "Contributed to the development of a SaaS platform and learned modern web development practices.",
-    technologies: ["JavaScript", "React", "Node.js", "MongoDB"],
-  },
-];
+// type Experience = {
+//   title: string;
+//   company: string;
+//   period: string;
+//   description: string;
+//   technologies: string[];
+// }
+
+// const experiences: Experience[]
 
 const education = [
   {
-    degree: "Bachelor of Computer Science",
-    institution: "University of Technology",
-    period: "2015 - 2019",
+    degree: "Bachelor of Technology -  Computer Science & Engineering",
+    institution: "Vellore Institute of Technology, Chennai",
+    period: "2022 -2026",
     description: "Focused on software engineering and web development.",
   },
   {
-    degree: "Web Development Bootcamp",
-    institution: "Code Academy",
-    period: "2019",
-    description: "Intensive program covering modern web development technologies.",
+    degree: "Higher Secondary Certificate (HSC)",
+    institution: "RMG Maheshwari English School, Surat",
+    period: "2020 - 2022",
+    description: "Achieved 88.4% result in the final CBSE board exams.",
+  },
+  {
+    degree: "Secondary School Certificate (SSC)",
+    institution: "JNV Bharuch",
+    period: "2015 - 2020",
+    description: "Awarded 'Student Of The Year' in 7th grade for all-round performance. Achieved 95% result in the final CBSE board exams.",
   },
 ];
 
 const interests = [
-  "Open Source Contribution", "UI/UX Design", "Machine Learning", 
-  "Cloud Computing", "DevOps", "Mobile Development", "Blockchain", "AI/ML"
+  "Competitive Programming",
+  "Open Source Contribution",
+  "System Design",
+  "Full-Stack Development",
+  "DevOps",
+  "Cloud Computing",
 ];
 
 export function AboutSection() {
@@ -61,7 +57,7 @@ export function AboutSection() {
         className="absolute inset-0 opacity-5"
       />
       
-      <div className="relative z-10 px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -74,7 +70,7 @@ export function AboutSection() {
             About Me
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Passionate about creating exceptional digital experiences and solving complex problems through innovative web development.
+            Passionate about creating exceptional programs and solving the hardest problems to create impactful solutions.
           </p>
         </motion.div>
 
@@ -95,9 +91,9 @@ export function AboutSection() {
                 alt="Profile Picture"
                 width={200}
                 height={200}
-                className="mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center"/>
-                <CardTitle className="text-2xl">Your Name</CardTitle>
-                <p className="text-muted-foreground">Full Stack Developer</p>
+                className="mx-auto bg-white mb-4 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center"/>
+                <CardTitle className="text-2xl">Darshan Odedara</CardTitle>
+                <p className="text-muted-foreground"><code>Coder for life</code></p>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-3 text-sm">
@@ -152,18 +148,15 @@ export function AboutSection() {
               </CardHeader>
               <CardContent className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  I'm a passionate full-stack developer with over 5 years of experience creating modern web applications. 
-                  I specialize in React, Next.js, and Node.js, and I'm always eager to learn new technologies and best practices.
+                  I'm a passionate full-stack developer with over 2+ years of experience creating modern web applications.
+                  I specialize in React, Next.js, Node.js, and Python Web Frameworks, and I'm always eager to learn new technologies and best practices.
                 </p>
                 <p>
-                  My journey in web development started with a curiosity about how websites work, which led me to pursue 
-                  a degree in Computer Science. Since then, I've worked on various projects ranging from small business 
-                  websites to large-scale enterprise applications.
+                  My journey as a programmer started when I started building mobile apps on a non-coding platform called Thunkable. It was back then, when I developed programming logic. I wrote my first code in Python when I was in 11th grade, so Python will always be special for me. Since then, I have learnt multiple programming languages, frameworks, and technologies.
                 </p>
                 <p>
-                  I believe in writing clean, maintainable code and creating user experiences that are both beautiful and functional. 
-                  When I'm not coding, you can find me contributing to open-source projects, reading about new technologies, 
-                  or exploring the latest trends in web development.
+                  I believe in writing clean, maintainable, and scalable code and creating user experiences that are both beautiful and functional.
+                  When I'm not coding, you can find me learning a new skill, mostly programming, or reading about new technologies, or exploring the latest trends in development, or, in the end, watching movies.
                 </p>
               </CardContent>
             </Card>
@@ -171,7 +164,7 @@ export function AboutSection() {
         </motion.div>
 
         {/* Experience Timeline */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -216,7 +209,7 @@ export function AboutSection() {
               </div>
             </CardContent>
           </Card>
-        </motion.div>
+        </motion.div> */}
 
         {/* Education & Interests */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

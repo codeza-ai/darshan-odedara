@@ -29,6 +29,15 @@ importers:
       '@radix-ui/react-tooltip':
         specifier: ^1.2.8
         version: 1.2.8(@types/react-dom@19.1.7(@types/react@19.1.10))(@types/react@19.1.10)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@squircle/core':
+        specifier: ^1.0.6
+        version: 1.0.6(@squircle/paint-polyfill@1.0.6)
+      '@squircle/paint-polyfill':
+        specifier: ^1.0.6
+        version: 1.0.6
+      '@squircle/tailwindcss':
+        specifier: ^1.0.6
+        version: 1.0.6
       '@tailwindcss/typography':
         specifier: ^0.5.16
         version: 0.5.16(tailwindcss@4.1.12)
@@ -634,6 +643,17 @@ packages:
 
   '@radix-ui/rect@1.1.1':
     resolution: {integrity: sha512-HPwpGIzkl28mWyZqG52jiqDJ12waP11Pa1lGoiyUkIEuMLBP0oeK/C89esbXrxsky5we7dfd8U58nm0SgAWpVw==}
+
+  '@squircle/core@1.0.6':
+    resolution: {integrity: sha512-jvAIehtarEHBl6W80LNiZ9KWVKdJw6jGj/avwwbCoGVs9t+AUA5YVmUyAtEasFtoocHwxbbRsdnTeKxQ+061aQ==}
+    peerDependencies:
+      '@squircle/paint-polyfill': ^1.0.3
+
+  '@squircle/paint-polyfill@1.0.6':
+    resolution: {integrity: sha512-w3FotA1v53MG+R6eGM37wv1aVoW3jwymwGteGCGXEM10Gq7zYeCus5dTgcyW6fhc9piRqsFLyU8MIl+EbtM9RA==}
+
+  '@squircle/tailwindcss@1.0.6':
+    resolution: {integrity: sha512-tmOWdpX7lzBAJzuvajn4NVBtC7mVORmzf/jKREYMw8iJ806Xq4FCUkrtbxkd9blzOx7TG2JwLF3avh5It/Z6TQ==}
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
@@ -1989,6 +2009,14 @@ snapshots:
       '@types/react-dom': 19.1.7(@types/react@19.1.10)
 
   '@radix-ui/rect@1.1.1': {}
+
+  '@squircle/core@1.0.6(@squircle/paint-polyfill@1.0.6)':
+    dependencies:
+      '@squircle/paint-polyfill': 1.0.6
+
+  '@squircle/paint-polyfill@1.0.6': {}
+
+  '@squircle/tailwindcss@1.0.6': {}
 
   '@swc/helpers@0.5.15':
     dependencies:

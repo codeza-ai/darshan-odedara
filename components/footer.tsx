@@ -13,8 +13,8 @@ export function Footer() {
 
   return (
     <footer className="relative bg-muted/20 border-t border-border/50">
-      <div className="w-2/3 mx-auto py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="md:w-2/3 w-full mx-auto py-12 px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* Brand */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -28,10 +28,12 @@ export function Footer() {
               height={100}
             />
             <br />
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Creating exceptional digital experiences through innovative web development and thoughtful design.
+            <p className="text-white-foreground text-md leading-relaxed font-bold">
+              Creating exceptional arts in binary.
             </p>
-            <br />
+            <div className="text-white-foreground text-md leading-relaxed font-bold">
+              <p>/'''''\ _ _ _ /'''''\ _ _ _ </p>
+            </div>
             <div className="flex space-x-4">
               <Socials/>
             </div>
@@ -101,9 +103,9 @@ export function Footer() {
             <h4 className="font-semibold text-lg">Get In Touch</h4>
             <div className="space-y-2 text-sm">
               <p className="text-muted-foreground">
-                Ready to start a project ?
+                Want to cook something together? Drop me a line!
               </p>
-              <div className="flex items-center gap-2 text-muted-foreground">
+              <div className="flex items-center gap-2 font-bold text-white-foreground">
                 <Mail className="h-4 w-4" />
                 <span>darshanodedara.official@gmail.com</span>
               </div>
@@ -131,7 +133,7 @@ export function Footer() {
           className="mt-12 pt-8 border-t border-border/50 flex flex-col sm:flex-row justify-between items-center gap-4"
         >
           <p className="text-sm text-muted-foreground">
-            © 2024 Portfolio. All rights reserved.
+            © 2025 Darshan Odedara. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Button

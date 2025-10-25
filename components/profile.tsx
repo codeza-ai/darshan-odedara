@@ -20,20 +20,14 @@ export default function Profile() {
         return theme;
     })();
     return (
-        <div className="relative w-[700px] h-[500px]">
+        <div className="relative w-full h-full flex items-center justify-center">
             <Image
                 src={resolvedTheme === "dark" ? "/logo-dark.png" : "/logo-light.png"}
                 alt="Background Logo"
-                width={700}
-                height={500}
-                className="rounded-lg object-cover w-full h-full"
-            />
-            <Image
-                src="/profile.png"
-                alt="Profile Picture"
-                width={300}
-                height={300}
-                className="rounded-full border-none absolute top-[100px] right-[100px]"
+                fill
+                sizes="(max-width: 640px) 320px, (max-width: 768px) 384px, (max-width: 1024px) 450px, 560px"
+                className="rounded-lg object-cover"
+                priority
             />
         </div>
     );   

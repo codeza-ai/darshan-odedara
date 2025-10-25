@@ -17,51 +17,6 @@ const blogPosts = [
     featured: true,
     slug: "building-scalable-react-applications",
   },
-  {
-    title: "The Future of Web Development: What's Next in 2024",
-    excerpt: "Explore the latest trends in web development, from AI-powered tools to new frameworks and technologies that are shaping the future of the web.",
-    category: "Technology",
-    readTime: "6 min read",
-    date: "2024-01-10",
-    featured: true,
-    slug: "future-of-web-development-2024",
-  },
-  {
-    title: "Mastering CSS Grid and Flexbox",
-    excerpt: "A comprehensive guide to modern CSS layout techniques, including practical examples and real-world use cases for Grid and Flexbox.",
-    category: "CSS",
-    readTime: "10 min read",
-    date: "2024-01-05",
-    featured: false,
-    slug: "mastering-css-grid-flexbox",
-  },
-  {
-    title: "Optimizing Performance in Next.js Applications",
-    excerpt: "Discover advanced techniques for optimizing performance in Next.js applications, from code splitting to image optimization.",
-    category: "Performance",
-    readTime: "12 min read",
-    date: "2024-01-01",
-    featured: false,
-    slug: "optimizing-nextjs-performance",
-  },
-  {
-    title: "State Management in Modern React Applications",
-    excerpt: "Compare different state management solutions for React applications, from Context API to Redux and Zustand.",
-    category: "React",
-    readTime: "9 min read",
-    date: "2023-12-28",
-    featured: false,
-    slug: "state-management-react",
-  },
-  {
-    title: "Designing Accessible Web Applications",
-    excerpt: "Learn the principles of web accessibility and how to implement them in your applications to reach a wider audience.",
-    category: "Accessibility",
-    readTime: "7 min read",
-    date: "2023-12-25",
-    featured: false,
-    slug: "designing-accessible-web-apps",
-  },
 ];
 
 export function BlogSection() {
@@ -79,7 +34,7 @@ export function BlogSection() {
         />
       </div>
       
-      <div className="relative z-10 px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
